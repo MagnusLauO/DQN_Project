@@ -1,0 +1,97 @@
+pygame 2.6.1 (SDL 2.28.4, Python 3.9.21)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Using cuda
+Episode=100, Average reward=-242.0, Steps=237, Epsilon=0.5008
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=200, Average reward=-53.5, Steps=384, Epsilon=0.2508
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=300, Average reward=849.5, Steps=1394, Epsilon=0.1256
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=400, Average reward=1901.8, Steps=2221, Epsilon=0.0629
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=500, Average reward=3326.7, Steps=3272, Epsilon=0.0315
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=600, Average reward=4221.7, Steps=3937, Epsilon=0.0158
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=700, Average reward=4486.3, Steps=4108, Epsilon=0.0100
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=800, Average reward=4498.7, Steps=4110, Epsilon=0.0100
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=900, Average reward=4539.7, Steps=4148, Epsilon=0.0100
+Neurons in hidden layer: 128, Current network: NN2
+
+Episode=1000, Average reward=4533.3, Steps=4141, Epsilon=0.0100
+Neurons in hidden layer: 128, Current network: NN2
+
+Training time: 1887.713785648346 seconds
+##############################################
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 23825210: <OneHot> in cluster <dcc> Done
+
+Job <OneHot> was submitted from host <n-62-27-19> by user <s245689> in cluster <dcc> at Wed Jan 22 19:08:50 2025
+Job was executed on host(s) <4*n-62-20-13>, in queue <gpuv100>, as user <s245689> in cluster <dcc> at Wed Jan 22 19:12:27 2025
+</zhome/2a/e/217326> was used as the home directory.
+</zhome/2a/e/217326/BallsGame/Hope/ANewHope/New/NewOneHot3> was used as the working directory.
+Started at Wed Jan 22 19:12:27 2025
+Terminated at Wed Jan 22 19:44:01 2025
+Results reported at Wed Jan 22 19:44:01 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -J OneHot
+#BSUB -o OneHot%J.out
+#BSUB -e OneHot%J.err
+#BSUB -n 4
+#BSUB -q gpuv100
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -R "rusage[mem=8G]"
+#BSUB -R "span[hosts=1]"
+#BSUB -W 08:00
+# end of BSUB options
+
+export XDG_RUNTIME_DIR=/tmp/$USER-runtime
+mkdir -p $XDG_RUNTIME_DIR
+chmod 700 $XDG_RUNTIME_DIR
+
+module load cuda/12.4
+
+python3 DQNBallsOneHot.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1895.00 sec.
+    Max Memory :                                 912 MB
+    Average Memory :                             842.06 MB
+    Total Requested Memory :                     32768.00 MB
+    Delta Memory :                               31856.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                11
+    Run time :                                   1896 sec.
+    Turnaround time :                            2111 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <OneHot23825210.err> for stderr output of this job.
+

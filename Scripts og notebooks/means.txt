@@ -1,0 +1,37 @@
+Means and their ind. data
+
+Float: N/A due to not reaching goal seven times.
+N/A
+444
+479
+N/A
+480
+N/A
+N/A
+N/A
+N/A
+N/A
+
+Grid: N/A due to not reaching goal one time
+593
+465
+529
+535
+532
+540
+560
+N/A
+514
+484
+
+OneHot: mean=436
+404
+466
+449
+421
+401
+405
+428
+474
+448
+464
