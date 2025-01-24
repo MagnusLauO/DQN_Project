@@ -24,4 +24,6 @@ Der optræder 5 mapper:
     - Stats - Basic.ipynb: Statistikværktøjer til beregning af middelværdi, spredning og konfidensintervaller, som i meget stor grad kan findes i pensum. 
     - Stats - Advanced.ipynb: Statistikværktøjer til beregning af proportionsforskel, variansforskel og simulation, der låner fra 02402 Statistics pensum.
 
+  - Mikkels løsning: Indeholder Mikkels løsning på spillet SpaceInvaders. Vi har draget stor inspiration herfra. Især når koden har drillet. Hvilken den har gjort. Meget.
+
   - README.txt: Denne fil :)
