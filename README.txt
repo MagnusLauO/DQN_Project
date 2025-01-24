@@ -26,4 +26,6 @@ Der optræder 5 mapper:
 
   - Mikkels løsning: Indeholder Mikkels løsning på spillet SpaceInvaders. Vi har draget stor inspiration herfra. Især når koden har drillet. Hvilken den har gjort. Meget.
 
+  - t-table.pdf: Brugt i udregninger.
+
   - README.txt: Denne fil :)
